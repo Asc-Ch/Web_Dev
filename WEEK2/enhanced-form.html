@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Kenya: Safari & Beach Adventures</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #1a6b3a;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        h1{
+            color: aqua;
+        }
+        h2, h3 {
+            color: #1a6b3a;
+        }
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #1a6b3a;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .media-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .media-item {
+            flex: 1 1 300px;
+            text-align: center;
+        }
+        form {
+            background-color: #e9f5ee;
+            padding: 25px;
+            border-radius: 5px;
+        }
+        fieldset {
+            border: 1px solid #1a6b3a;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        legend {
+            padding: 0 10px;
+            font-weight: bold;
+            color: #1a6b3a;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="checkbox"], input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        button {
+            background-color: #1a6b3a;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0d4d24;
+        }
+        .required:after {
+            content: " *";
+            color: red;
+        }
+        .travel-tips {
+            background-color: #f0f7f3;
+            padding: 15px;
+            border-left: 4px solid #1a6b3a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore Kenya: Safari & Beach Adventures</h1>
+        <p>Discover the best destinations, wildlife, and cultural experiences in Kenya</p>
+    </header>
+
+    <section id="lists">
+        <h2>Must-Visit Kenyan Destinations</h2>
+        
+        <div style="display: flex; gap: 30px; flex-wrap: wrap;">
+            <div style="flex: 1 1 300px;">
+                <h3>Wildlife & Safari</h3>
+                <ul>
+                    <li><strong>Maasai Mara:</strong> The Great Migration (July-Oct)</li>
+                    <li><strong>Amboseli:</strong> Elephants with Kilimanjaro views</li>
+                    <li><strong>Tsavo East/West:</strong> Red elephants & diverse landscapes</li>
+                    <li><strong>Samburu:</strong> Rare species like Grevy's zebra</li>
+                </ul>
+            </div>
+            
+            <div style="flex: 1 1 300px;">
+                <h3>Beaches & Coastal</h3>
+                <ul>
+                    <li><strong>Diani Beach:</strong> White sands & coral reefs</li>
+                    <li><strong>Watamu:</strong> Marine parks & turtle nesting</li>
+                    <li><strong>Lamu Island:</strong> Swahili culture & donkeys</li>
+                    <li><strong>Malindi:</strong> Italian influence & deep-sea fishing</li>
+                </ul>
+            </div>
+            
+            <div style="flex: 1 1 300px;">
+                <h3>Cultural & Other</h3>
+                <ul>
+                    <li><strong>Nairobi:</strong> Giraffe Centre & Karen Blixen</li>
+                    <li><strong>Lake Nakuru:</strong> Flamingos & rhinos</li>
+                    <li><strong>Hell's Gate:</strong> Cycling safari & geothermal spa</li>
+                    <li><strong>Mount Kenya:</strong> Hiking & alpine scenery</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="travel-tips">
+            <h3>Travel Tips for Kenya</h3>
+            <ol>
+                <li>Visa: Apply for an e-visa before arrival</li>
+                <li>Vaccinations: Yellow fever certificate may be required</li>
+                <li>Currency: Kenyan Shilling (carry small bills)</li>
+                <li>Safety: Avoid walking alone at night in cities</li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="tables">
+        <h2>Kenyan Safari Cost Comparison</h2>
+        <p>Average prices for 3-day safaris (per person):</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Park</th>
+                    <th>Budget Camping</th>
+                    <th>Mid-Range Lodge</th>
+                    <th>Luxury Safari</th>
+                    <th>Best Time to Visit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Maasai Mara</td>
+                    <td>$400</td>
+                    <td>$800</td>
+                    <td>$1,500+</td>
+                    <td>Jul-Oct (Migration)</td>
+                </tr>
+                <tr>
+                    <td>Amboseli</td>
+                    <td>$350</td>
+                    <td>$700</td>
+                    <td>$1,200+</td>
+                    <td>Jun-Sep, Jan-Feb</td>
+                </tr>
+                <tr>
+                    <td>Tsavo East</td>
+                    <td>$300</td>
+                    <td>$600</td>
+                    <td>$1,000+</td>
+                    <td>All year</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="media">
+        <h2>Experience Kenya's Beauty</h2>
+        
+        <div class="media-container">
+            <div class="media-item">
+                <h3>Maasai Mara Wildlife</h3>
+                <img src="https://images.pexels.com/photos/10495959/pexels-photo-10495959.jpeg" alt="Great Migration in Maasai Mara" width="500" height="350">
+                <p>The annual wildebeest crossing</p>
+            </div>
+            
+            <div class="media-item">
+                <h3>Diani Beach</h3>
+                <img src="https://images.pexels.com/photos/33376801/pexels-photo-33376801.jpeg" alt="White sandy beach in Diani" width="150" height="150">
+                <p>One of Africa's best beaches</p>
+            </div>
+            
+            <div class="media-item">
+                <h3>Lamu Old Town</h3>
+                <img src="https://images.pexels.com/photos/30282791/pexels-photo-30282791.jpeg" alt="Historic Swahili architecture">
+                <p>Lamu Island</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="form">
+        <h2>Plan Your Kenyan Adventure</h2>
+        <p>Fill out this form to request safari or beach package information:</p>
+        
+        <form action="#" method="post" novalidate>
+            <fieldset>
+                <legend><span class="required">Personal Information</span></legend>
+                
+                <label for="name" class="required">Full Name</label>
+                <input type="text" id="name" name="name" required minlength="3" placeholder="Your full name">
+                
+                <label for="email" class="required">Email</label>
+                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                
+                <label for="phone">Phone (with country code)</label>
+                <input type="tel" id="phone" name="phone" pattern="[+]{1}[0-9]{11,14}" placeholder="+254700123456">
+            </fieldset>
+            
+            <fieldset>
+                <legend>Travel Preferences</legend>
+                
+                <label for="destination" class="required">Primary Destination Interest</label>
+                <select id="destination" name="destination" required>
+                    <option value="">-- Select --</option>
+                    <option value="maasai-mara">Maasai Mara Safari</option>
+                    <option value="amboseli">Amboseli National Park</option>
+                    <option value="diani">Diani Beach</option>
+                    <option value="lamu">Lamu Island</option>
+                    <option value="multiple">Multi-Destination</option>
+                </select>
+                
+                <label for="travel-date" class="required">Preferred Travel Month</label>
+                <input type="month" id="travel-date" name="travel-date" required>
+                
+                <label>Travel Type</label>
+                <div>
+                    <input type="radio" id="solo" name="travel-type" value="solo">
+                    <label for="solo">Solo</label>
+                    
+                    <input type="radio" id="couple" name="travel-type" value="couple" checked>
+                    <label for="couple">Couple</label>
+                    
+                    <input type="radio" id="family" name="travel-type" value="family">
+                    <label for="family">Family</label>
+                    
+                    <input type="radio" id="group" name="travel-type" value="group">
+                    <label for="group">Group</label>
+                </div>
+                
+                <label for="budget">Budget Range (USD)</label>
+                <input type="range" id="budget" name="budget" min="500" max="5000" step="500" value="1500">
+                <span>Selected: $<span id="budget-value">1500</span></span>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Additional Requests</legend>
+                
+                <label for="accommodation">Accommodation Preference</label>
+                <select id="accommodation" name="accommodation">
+                    <option value="any">Any</option>
+                    <option value="camping">Camping</option>
+                    <option value="lodge">Lodge</option>
+                    <option value="luxury">Luxury Tented Camp</option>
+                    <option value="resort">Beach Resort</option>
+                </select>
+                
+                <label>Special Interests (Select all that apply)</label>
+                <div>
+                    <input type="checkbox" id="wildlife" name="interests" value="wildlife" checked>
+                    <label for="wildlife">Wildlife Photography</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="culture" name="interests" value="culture">
+                    <label for="culture">Cultural Experiences</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="beach" name="interests" value="beach">
+                    <label for="beach">Beach Relaxation</label>
+                </div>
+                
+                <label for="comments">Special Requests</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Dietary needs, accessibility requirements, etc."></textarea>
+            </fieldset>
+            
+            <button type="submit">Request Travel Information</button>
+            <button type="reset">Clear Form</button>
+        </form>
+    </section>
+
+    <footer style="text-align: center; margin-top: 40px; color: #666;">
+        <p>&copy; 2023 Explore Kenya | Contact: info@explorekenya.co.ke</p>
+    </footer>
+</body>
+</html>

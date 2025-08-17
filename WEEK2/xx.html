@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destination Explorer</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0 auto; max-width: 1000px; padding: 20px; }
+        header { background: #2a6496; color: white; padding: 20px; text-align: center; }
+        section { margin: 30px 0; border-left: 5px solid #2a6496; padding: 15px; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { padding: 10px; border: 1px solid #ddd; text-align: left; }
+        th { background: #2a6496; color: white; }
+        img { max-width: 100%; height: auto; }
+        .media-container { display: flex; gap: 20px; flex-wrap: wrap; }
+        fieldset { border: 1px solid #ddd; padding: 20px; margin-bottom: 20px; }
+        .required:after { content: " *"; color: red; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Travel Destination Explorer</h1>
+        <p>Plan your next adventure with our guides and tools</p>
+    </header>
+
+    <section id="lists">
+        <h2>Travel Inspiration</h2>
+        <div style="display: flex; gap: 30px;">
+            <div>
+                <h3>Top 2024 Destinations</h3>
+                <ul>
+                    <li>Kyoto, Japan (Cherry Blossom Season)</li>
+                    <li>Santorini, Greece (Sunset Views)</li>
+                    <li>Banff, Canada (Mountain Adventures)</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Packing Checklist</h3>
+                <ol>
+                    <li>Passport/ID</li>
+                    <li>Weather-appropriate clothing</li>
+                    <li>Universal adapter</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section id="tables">
+        <h2>Flight Price Comparison</h2>
+        <table>
+            <tr>
+                <th>Destination</th>
+                <th>Airline</th>
+                <th>Price (Round Trip)</th>
+            </tr>
+            <tr>
+                <td>Tokyo</td>
+                <td>Japan Airlines</td>
+                <td>$1,200</td>
+            </tr>
+            <tr>
+                <td>Paris</td>
+                <td>Air France</td>
+                <td>$850</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="media">
+        <h2>Featured Destination: Kyoto</h2>
+        <div class="media-container">
+            <img src="https://via.placeholder.com/400x300?text=Kyoto+Temple" alt="Fushimi Inari Shrine">
+            <iframe width="400" height="300" src="https://www.youtube.com/embed/6x1Wq2h2kVg" title="Kyoto Travel Guide" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="form">
+        <h2>Plan Your Trip</h2>
+        <form action="#" method="post" novalidate>
+            <fieldset>
+                <legend><span class="required">Travel Details</span></legend>
+                <label for="destination" class="required">Destination</label>
+                <input type="text" id="destination" name="destination" required placeholder="Where are you going?">
+
+                <label for="dates" class="required">Travel Dates</label>
+                <input type="date" id="departure" name="departure" required>
+                to
+                <input type="date" id="return" name="return" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <label>Travel Type:</label>
+                <input type="radio" id="leisure" name="travel-type" checked>
+                <label for="leisure">Leisure</label>
+                <input type="radio" id="business" name="travel-type">
+                <label for="business">Business</label>
+
+                <label for="budget">Budget Range</label>
+                <select id="budget" name="budget">
+                    <option value="500">Under $500</option>
+                    <option value="1000">$500-$1000</option>
+                </select>
+            </fieldset>
+
+            <button type="submit">Submit Trip Plan</button>
+        </form>
+    </section>
+</body>
+</html>
