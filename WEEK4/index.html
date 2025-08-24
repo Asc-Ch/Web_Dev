@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">Flexible</div>
+            <nav>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul id="nav-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container">
+        <!-- Using CSS Grid for main layout -->
+        <div class="main-grid">
+            <!-- Content Section -->
+            <section class="content">
+                <h1>Welcome to Flexible</h1>
+                <p>This is a demonstration of a responsive layout using both CSS Grid and Flexbox. Resize the browser to see how the layout adapts to different screen sizes.</p>
+                
+                <!-- Using Flexbox for cards -->
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-img">Image 1</div>
+                        <div class="card-content">
+                            <h3>Card Title 1</h3>
+                            <p>This is a sample card with some content. The cards are arranged using Flexbox.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">Image 2</div>
+                        <div class="card-content">
+                            <h3>Card Title 2</h3>
+                            <p>This is a sample card with some content. The cards are arranged using Flexbox.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">Image 3</div>
+                        <div class="card-content">
+                            <h3>Card Title 3</h3>
+                            <p>This is a sample card with some content. The cards are arranged using Flexbox.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <p>The main layout of this page is created using CSS Grid with content and sidebar on desktop views. On mobile devices, the sidebar moves below the content.</p>
+            </section>
+            
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-widget">
+                    <h3>About Us</h3>
+                    <p>We create beautiful and responsive websites that work well on all devices.</p>
+                </div>
+                <div class="sidebar-widget">
+                    <h3>Subscribe</h3>
+                    <p>Enter your email to get updates:</p>
+                    <form>
+                        <input type="email" placeholder="Your email" style="padding: 0.5rem; width: 100%; margin: 0.5rem 0;">
+                        <button type="submit" style="padding: 0.5rem 1rem; background: #2c3e50; color: white; border: none; width: 100%;">Subscribe</button>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Flexible</h3>
+                    <p>Creating beautiful and responsive layouts.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@flexible.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Flexible. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
