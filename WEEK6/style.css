@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.dark-mode {
+  background: #121212;
+  color: #ffffff;
+}
+
+.error {
+  color: red;
+  font-size: 0.8em;
+}
+
+/* FAQ styles */
+.faq-answer {
+  display: none;
+  margin: 5px 0 15px;
+}
+.faq-answer.active {
+  display: block;
+  color: #333;
+}
+.faq-question {
+  cursor: pointer;
+  background: #f2f2f2;
+  padding: 10px;
+  border-radius: 6px;
+}
+.faq-question span {
+  float: right;
+}
+
+/* Dropdown menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #f9f9f9;
+  min-width: 160px;
+  border: 1px solid #ccc;
+  z-index: 1;
+}
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+}
+.dropdown-content a:hover {
+  background: #ddd;
+}
+.dropdown-content.show {
+  display: block;
+}
